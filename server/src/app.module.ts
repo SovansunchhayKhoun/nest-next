@@ -4,10 +4,10 @@ import {
   NestModule,
   RequestMethod,
 } from '@nestjs/common';
-import { AppController } from '../app.controller';
-import { AppService } from './app.service';
-import { CatsController } from '../cats/cats.controller';
-import { CatsService } from '../cats/cats.service';
+import { AppController } from './app/app.controller';
+import { AppService } from './app/app.service';
+import { CatsController } from './cats/cats.controller';
+import { CatsService } from './cats/cats.service';
 import { CatsModule } from 'src/cats/cats.module';
 import { logger } from 'src/middleware/logger.middleware';
 import { UsersModule } from 'src/users/users.module';
